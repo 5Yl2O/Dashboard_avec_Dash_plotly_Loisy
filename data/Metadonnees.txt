@@ -1,0 +1,53 @@
+Titre : Export de données du Système d’Information sur l’Eau Rhin-Meuse
+Créateur : Système d’Information sur l’Eau Rhin-Meuse
+
+Sujet : eau, eaux de surface, cours d’eau, observation, surveillance, qualité
+
+Description : Données exportées
+Editeur : Agence de l’Eau Rhin-Meuse (AERM)
+Contributeur : Partenaires du Système d’Information sur l’Eau Rhin-Meuse (SIERM)
+Date : 2022-02-22 (date de l’export)
+Type : Lot de données
+Format : application/zip
+Source : Bases de données des partenaires du Système d’Information sur l’Eau Rhin-Meuse (SIERM)
+Langue : fr
+Relation : www.sandre.eaufrance.fr
+Couverture : Bassin Rhin-Meuse
+Ressources : Les données sont protégées par la licence Creative Commons Paternité – Partage des conditions à
+l’identique 2.0 France (http://creativecommons.org/licenses/by-sa/2.0/fr/) 
+Critères de sélection des données : 22/02/2022 20:47:06;QSouStat;;;;;;;;;;;'01938X0147','01938X0113','01938X0150','01938X0148','01938X0149','01938X0151';;
+
+
+Description du fichier de données descriptif de la/les stations
+
+Descriptif de la (les) station(s) de suivi de la qualité des eaux sélectionnée(s). Pour obtenir la définition des champs d’information présents dans le fichier, se reporter aux dictionnaires de données normalisés par le SANDRE : http://sandre.eaufrance.fr/mot.php3?id_mot=5
+
+
+Description du fichier des données mesurées.
+
+Fichier contenant les données élémentaires
+N° Station :  Code Sandre de la station
+Nom Station :   
+Date prélèvement :  
+Heure prélèvement : 
+Code paramètre :  Code Sandre du paramètre
+Libellé paramètre : 
+Unité paramètre :   
+Validité de la mesure :  Information complémentaire au code remarque. Lorsque la valeur n'a pu être quantifiée (code remarque = 10), le signe "<" indique que le résultat est inférieur au seuil de quantification qui est alors mentionné dans la colonne "Valeur paramètre"
+Valeur paramètre :  Valeur mesurée quand le code remarque =1, limite de quantification lorsque le code remarque =10
+Code remarque :  1 = Résultat > seuil de quantification et < au seuil de saturation ; 10 = Résultat < au seuil de quantification
+Support, Fraction : Support (ex : Sédiments) et fraction (ex : < 2µm) sur lesquels sont réalisées les analyses
+Producteur :  Organisme responsable de la donnée
+
+Fichier contenant les données de synthèse annuelles
+N° Station :  Code Sandre de la station
+Nom Station :   
+Année : 
+Code paramètre :  Code Sandre du paramètre
+Libellé paramètre : 
+Unité paramètre :   
+Valeur paramètre :  Valeur mesurée quand le code remarque =1, limite de quantification lorsque le code remarque =10
+Validité du résultat :  Information sur la qualité du résultat du calcul statistique  
+Type de donnée :  Information sur le type de statistique annuelle correspondant au paramètre ( ex : Moyenne annuelle). Pour le calcul des moyennes, les analyses non quantifiées sont prises en compte en leur associant la limite de quantification divisée par 2.
+Support, Fraction : Support (ex : Sédiments) et fraction (ex : < 2µm) sur lesquels sont réalisées les analyses
+Producteur :  Organisme responsable de la donnée
