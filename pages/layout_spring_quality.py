@@ -15,13 +15,13 @@ layout_spring_quality = html.Div([
 
 
     dcc.Dropdown(id="select_param",
-                 children=[
-                     {"label": 'Nitrates (en NO3)', "value": '1340'},
+                 options=[
+                     {"label": "Nitrates (en NO3)", "value": '1340'},
                      {"label": "Conductivité à 25°C", "value": '1303'},
                      {"label": "Chlore combiné", "value": '1755'},
                      {"label": "Chlore total", "value": '1399'}
                  ],
-                 value='1340',
+                 value='1399',
                  ),
 
 

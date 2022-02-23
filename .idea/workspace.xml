@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad824710-19e2-45ae-b13a-b4722d098cbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/layout_spring_quality.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Dashboard_avec_Dash_plotly_Python-main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dashboard_avec_Dash_plotly_Python-main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirement.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/callbacks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/fichierDonnesCSV_20220222_084706.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/fichierDonnesCSV_20220222_084706.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/header.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/layout_acceuil.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/layout_acceuil.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/layout_dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/layout_dashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/layout_spring_quality.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/layout_spring_quality.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25ToMabTA6H5QjXG566THnEEdCu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -41,6 +39,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -94,15 +93,24 @@
       <option name="project" value="LOCAL" />
       <updated>1645605585059</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mise à jour nouvelle page">
+      <created>1645612961445</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645612961445</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/venv/src/django-plotly-dash" />
       <path value="$PROJECT_DIR$/.idea" />
     </ignored-roots>
     <MESSAGE value="mise à jour version Dash" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise à jour version Dash" />
+    <MESSAGE value="mise à jour nouvelle page" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise à jour nouvelle page" />
   </component>
 </project>

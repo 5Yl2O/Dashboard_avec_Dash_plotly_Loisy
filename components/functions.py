@@ -22,8 +22,10 @@ res = r.json()
 df_ars=pd.DataFrame.from_dict(res['data'])
 
 ## Données Agence de l'Eau Rhin Meuse
-df_aerm=pd.read_csv('data/fichierDonnesCSV_20220222_084706.csv')
+df_aerm=pd.read_csv('data/fichierDonnesCSV_20220222_084706.csv', sep=';', decimal=',')
 
+## Données Mairie de Loisy
+df_mairie=pd.read_csv('data/nitrate_mairie.csv')
 
 #fonction de mise à  jour de la table
 

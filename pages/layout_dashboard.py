@@ -1,12 +1,10 @@
 from dash import dcc, html, dash_table
-#import dash_core_components as dcc
-#import dash_html_components as html
-#import dash_table
+
 from datetime import datetime as dt
 from datetime import date, timedelta
 import pandas as pd
 import time
-from components.functions import df_pc
+from components.functions import df_pc, df_ars, df_aerm
 import dash
 import dash_bootstrap_components as dbc
 
@@ -32,9 +30,9 @@ def create_card(title, content,color):
 
 acces_number=df_pc.sum(axis=0)
 
-card1 = create_card("Nombre d'accès Android", acces_number[0],color_l[0])
-card2 = create_card("Nombre d'accès Autres PC", acces_number[1],color_l[1])
-card3 = create_card("Nombre d'accès Iphone", acces_number[2],color_l[2])
+card1 = create_card("Nombre d'analyses ARS", acces_number[0],color_l[0])
+card2 = create_card("Nombre d'analyses AERM", acces_number[1],color_l[1])
+card3 = create_card("Nombre d'analyses Mairie", acces_number[2],color_l[2])
 card4 = create_card("Nombre d'accès Mac", acces_number[3],color_l[3])
 
 card = dbc.Row([dbc.Col(id='card1', children=[card1], lg=3,width=6), dbc.Col(id='card2', children=[card2], lg=3,width=6), dbc.Col(id='card3', children=[card3], lg=3,width=6), dbc.Col(id='card4', children=[card4], lg=3,width=6)])
