@@ -1,4 +1,4 @@
-from dash.dependencies import Input, Output
+from dash import Input, Output
 from app import app
 from datetime import datetime as dt
 from datetime import date, timedelta
