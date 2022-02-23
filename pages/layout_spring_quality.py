@@ -5,7 +5,7 @@ import dash_leaflet as dl
 #import pandas as pd
 #import requests
 
-layout_spring_quality = html.Div([
+layout_spring_quality = html.Div(
     dbc.Container([
         html.H1("Qualité sanitaire de l'eau des sources de Loisy", style={'text-align': 'center'}),
         html.Br(),
@@ -27,5 +27,4 @@ layout_spring_quality = html.Div([
     ]
 
     )
-]
 )

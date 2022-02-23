@@ -1,9 +1,10 @@
 #import dash_core_components as dcc
 #import dash_html_components as html
-from dash import html, dcc
-from dash.dependencies import Input, Output
+from dash import html, dcc, Input, Output
+#from dash.dependencies import Input, Output
 import callbacks
 from pages.header import navbar
+from pages.layout_spring_localisation import layout_spring_localisation
 from pages.layout_spring_quality import layout_spring_quality
 from pages.layout_dashboard import layout_dashboard
 from pages.layout_acceuil import layout_acceuil
@@ -25,6 +26,8 @@ def display_page(pathname):
         return layout_acceuil
     elif pathname=='/springs_quality':
         return layout_spring_quality
+    elif pathname=='/spring_localisation':
+        return layout_spring_localisation
     elif pathname=='/dashboard':
         return layout_dashboard
 

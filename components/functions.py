@@ -5,6 +5,7 @@ from plotly.subplots import make_subplots
 import numpy as np
 import pandas as pd
 import requests
+from urllib.parse import urlencode
 
 #Import des données
 df_pc=pd.read_csv('data/data_pc.csv')
@@ -101,8 +102,7 @@ def update_graph(start_date, end_date,type):
 
     fig['layout'].update(
 
-     paper_bgcolor = '#000406',
-     font_color = "white"
+
       )
     updated_fig = fig
 
@@ -143,8 +143,7 @@ def update_pie(start_date, end_date,type):
 
     fig['layout'].update(
 
-    paper_bgcolor="#111111",
-    font_color = "white",
+
     annotations=[{"font": {"size": 20},
     "text": "Accès par Os","y": 0.4}]
     #showlegend= Fals
