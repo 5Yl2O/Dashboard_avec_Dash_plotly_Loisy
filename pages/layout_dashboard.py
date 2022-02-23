@@ -1,7 +1,7 @@
-from dash import dcc, html
+from dash import dcc, html, dash_table
 #import dash_core_components as dcc
 #import dash_html_components as html
-import dash_table
+#import dash_table
 from datetime import datetime as dt
 from datetime import date, timedelta
 import pandas as pd
@@ -13,7 +13,7 @@ import dash_bootstrap_components as dbc
 
 ################################bloc des cartes###########################
 #courleurs des cartes
-color_l=['info',"secondary","success","warning","danger"]
+color_l=['info',"primary","success","warning","danger"]
 #fonctiond de création des cartes
 def create_card(title, content,color):
     card = dbc.Card(
@@ -62,9 +62,7 @@ pie = dcc.Graph(
           "layout": {
                 "title" : dict(text ="Sentiment Analysis",
                                font =dict(
-                               size=20,
-                               color = 'white')),
-                "paper_bgcolor":"#111111",
+                               size=20)),
                 "width": "2000",
                 "annotations": [
                     {
@@ -95,11 +93,11 @@ radio_item=dcc.RadioItems(
       {'label': 'All', 'value': 'all'}
 
   ], #value='choix',
-  labelStyle={'display': 'inline-block', 'width': '20%','color': '#ffff','marginTop': 13},
+  labelStyle={'display': 'inline-block', 'width': '20%','marginTop': 13},
   id='radio-button-publishing'
   )
 
-filtre_label =html.H2("Select date range : ",style={'color':'#ffff'})
+filtre_label =html.H2("Select date range : ")
 filtre_line = dbc.Row([dbc.Col(filtre_label , lg=3,width=6), dbc.Col(radio_item, lg=6, width=6)])
 
 ###################################Fin bloc déclaration RadioItems##################
@@ -116,7 +114,7 @@ footer =dbc.Row(
         dbc.Col(
             html.P(
                 [
-                    html.Span('Auteur : Wilfried Kouadio', className='mr-2',style={'color':'#ffff'}),
+                    html.Span('Auteur : Wilfried Kouadio', className='mr-2'),
                     html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/berba1995/Dashboard_avec_Dash_plotly_Python'),
                     html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/wilfried-kouadio/'),
                 ],
@@ -127,4 +125,4 @@ footer =dbc.Row(
 
 
 #déclaration layout final
-layout_dashboard  = html.Div([html.Br(),card, html.Br(), filtre_line ,html.Br(), graph_line,html.Br(),footer],style={"background-color":'black',"height": "100vh"})
+layout_dashboard  = html.Div([html.Br(),card, html.Br(), filtre_line ,html.Br(), graph_line,html.Br(),footer],style={"height": "100vh"})

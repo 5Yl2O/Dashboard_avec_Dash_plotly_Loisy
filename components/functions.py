@@ -4,10 +4,29 @@ import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 import numpy as np
 import pandas as pd
+import requests
+
 #Import des données
 df_pc=pd.read_csv('data/data_pc.csv')
 df_pc['dates'] = pd.to_datetime(df_pc['dates'],format='%Y-%m-%d')
+
+## Données Contrôle sanitaire HubEau
+base ='http://hubeau.eaufrance.fr/'
+api ='api/vbeta/qualite_eau_potable/resultats_dis'
+requete ='?code_commune=54320&nom_uge=LOISY'
+
+url = base + api + requete
+
+r=requests.get(url)
+res = r.json()
+df_ars=pd.DataFrame.from_dict(res['data'])
+
+## Données Agence de l'Eau Rhin Meuse
+df_aerm=pd.read_csv('data/fichierDonnesCSV_20220222_084706.csv')
+
+
 #fonction de mise à  jour de la table
+
 def update_first_datatable(start_date,end_date,type):
     if start_date is not None:
             start_date= dt.strptime(start_date, '%Y-%m-%d')

@@ -3,7 +3,8 @@ from app import app
 from datetime import datetime as dt
 from datetime import date, timedelta
 from components.functions import df_pc
-from components.functions import update_first_datatable, update_graph,df_pc,update_pie
+from components.functions import update_first_datatable, update_graph,df_pc,update_pie, df_ars, df_aerm
+import plotly.express as px
 
 #callback de mise à jour de la table de données à partir du sélécteur de date
 @app.callback(Output('table', 'data'),
@@ -94,3 +95,29 @@ def update_publishing(value):
     else:
 	    fig = update_pie(start_date, end_date,'trafic')
 	    return fig
+
+# Connection du graph Plotly avec les composants Dash (dcc)
+@app.callback(
+    [Output(component_id='output_container', component_property='children'),
+     Output(component_id='my_conc', component_property='figure')],
+    [Input(component_id='select_param', component_property='value')]
+)
+def update_graph_qual(option_slctd):
+
+    container = "Le code du paramètre selectionné est: {}".format(option_slctd)
+
+    dff = df_ars.copy()
+    dff = dff[dff["code_parametre"] == option_slctd]
+
+
+    # Plotly Express
+    #Création du graph
+
+    fig_eau = px.line(dff,
+                      x='date_prelevement',
+                      y='resultat_numerique',
+                      color='nom_uge',
+                      markers=True
+                      )
+
+    return container, fig_eau

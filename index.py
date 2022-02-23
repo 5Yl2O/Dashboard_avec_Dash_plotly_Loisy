@@ -4,6 +4,7 @@ from dash import html, dcc
 from dash.dependencies import Input, Output
 import callbacks
 from pages.header import navbar
+from pages.layout_spring_quality import layout_spring_quality
 from pages.layout_dashboard import layout_dashboard
 from pages.layout_acceuil import layout_acceuil
 from app import app,server
@@ -23,7 +24,7 @@ def display_page(pathname):
     if pathname=='/acceuil' or pathname=='/':
         return layout_acceuil
     elif pathname=='/springs_quality':
-        return layout_spring_qual
+        return layout_spring_quality
     elif pathname=='/dashboard':
         return layout_dashboard
 

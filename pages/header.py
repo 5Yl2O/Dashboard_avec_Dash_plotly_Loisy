@@ -5,6 +5,7 @@ from dash import html
 LOGO = "https://loisy54.fr/wp-content/uploads/2020/11/Blason_Loisy_54.svg"
 
 navbar = dbc.Navbar(
+    dbc.Container(
     [
         html.A(
             # Alignement vertical de l'image et de l'acceuil
@@ -12,18 +13,21 @@ navbar = dbc.Navbar(
                 [   #logo
                     dbc.Col(html.Img(src=LOGO, height="40px")),
                     #Navlink Acceuil
-                    dbc.NavLink("Acceuil", href="/acceuil"),
+                    dbc.Col(dbc.NavLink("Acceuil", href="/acceuil")),
                     #Navlink dashbord
-                    dbc.NavLink("Dashbsoard", href="/dashboard"),
+                    dbc.Col(dbc.NavLink("Dashbsoard", href="/dashboard")),
                     #Navlink Qualité Sanitaire
-                    dbc.NavLink("Qualité Sources", href="/springs_quality")
+                    dbc.Col(dbc.NavLink("Qualité Sources", href="/springs_quality"))
                 ],
                 align="center",
-                #no_gutters=True,
+                className="g-0",
+
             ),
         ),
-        dbc.NavbarToggler(id="navbar-toggler"),
+
+        dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
     ],
+    )
     #color="dark",
     #dark=True,
 )

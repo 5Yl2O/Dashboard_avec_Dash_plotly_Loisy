@@ -1,10 +1,10 @@
-from dash import dcc, html
+from dash import dcc, html, dash_table
 #import dash_core_components as dcc
 #import dash_html_components as html
 import dash_bootstrap_components as dbc
 from components.functions import df_pc
 from datetime import date, timedelta
-import dash_table
+#import dash_table
 from datetime import datetime as dt
 
 ######################## START Log action sur site ########################
